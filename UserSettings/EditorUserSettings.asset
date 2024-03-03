@@ -6,28 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5a08575f5207595a0f5d59741173094444164f7d7d2a23317c7a4465bbe1646d
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 5003050757540d0b0e5c087148770e44454f402e7d7c70662b711e36b4e5636e
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 00550c5400505a0f59575c74427409444115407f2f787067797e4b67e4e5616c
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 51015151040d5b5a540d5e74407b064415161a727b7d2034757a4c31e6b5356f
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 560000020102580a0c5a547514715b444116492c7c787f617d711862e1b06039
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 55005103000d5d5d5b5c087648220f4414154b2c282e77647f7e1f30e7b0613e
-      flags: 0
-    RecentlyUsedSceneGuid-6:
       value: 060256555c025e5d5c5a0f73157a0d444e4e1a2f7d7f71642c701935b1b1656b
       flags: 0
-    RecentlyUsedSceneGuid-7:
+    RecentlyUsedSceneGuid-1:
       value: 5408525052070a580e5f557416220e44454f40782e2b2465287a4e60e1e4373e
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5353505e010c08030e0c0d2114260c44454e4e7d2f717333797d486bb1b16c3d
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 5b02505f04500b5959580e7516260f4414154e2f297d76667c7b4a63e6e16060
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 0603055652540b08595c092648720a4417151d727e7a22617f7c4a67e6e5376f
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 06545052540c5d095e5f0d7a497b084442164e7e2e7f23347f7b4b60b1b33668
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 02010c0454075d035c0d5d71117208441315492c2d2a23647b2d4564e3e4366e
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 00550c5400505a0f59575c74427409444115407f2f787067797e4b67e4e5616c
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5553015457025158540a0870457b0e44154e1e7f7e7c7e31297c4f61e3b1323c
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5a08575f5207595a0f5d59741173094444164f7d7d2a23317c7a4465bbe1646d
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:
       value: 18135939215a0a5004000b0e15254b524c030a3f2964643d120d1230e9e93a3fd6e826abbd2e2d293c4ead313b08042de6030a0afa240c0d020be94c4ba75e435d8715fa32c70d15d11612dacc11fee5d3c5d1fe9ab1bf968e93e2ffcbc3e7e2f0b3ffe0e8b0be9af8ffaeffff8e85dd8390e3949c8899daa7
