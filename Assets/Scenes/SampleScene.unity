@@ -2637,7 +2637,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -876546973899608171, guid: 3739e562a03fc0b4982d8aa66cc50865, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3816,8 +3816,6 @@ MonoBehaviour:
     ikTarget: {fileID: 1151991793}
     trackingPositionOffset: {x: 0.04, y: 0.04, z: -0.08}
     trackingRotationOffset: {x: 90, y: 0, z: 0}
-  headBodyPositionOffset: {x: 0, y: 0, z: 0}
-  headBodyYawOffset: 0
 --- !u!95 &1438170026 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: ee3a869d9e17b1747adcb028aa8068b0,
