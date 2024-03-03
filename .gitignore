@@ -1,0 +1,15 @@
+.vs/
+Library/
+obj/
+Temp/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.unityproj
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
