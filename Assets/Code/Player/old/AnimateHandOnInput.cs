@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using Photon.Pun; // Import Photon
 
-public class AnimateHandOnInput : MonoBehaviour
+public class AnimateHandOnInput : MonoBehaviourPun
 {
     [SerializeField]
     private XRController leftController;
@@ -9,51 +10,49 @@ public class AnimateHandOnInput : MonoBehaviour
     private XRController rightController;
 
     private Animator handAnimator;
+    public PhotonView photonView;
 
     private void Awake()
     {
         handAnimator = GetComponent<Animator>();
+        photonView = GetComponent<PhotonView>(); // Get the PhotonView component
     }
 
     private void Update()
     {
-        if (leftController != null)
+        // Only the local player should check their input and update animations
+        if (photonView.IsMine)
         {
-            UpdateHandAnimation(leftController, "LeftPinch", "LeftGrab");
-        }
+            if (leftController != null)
+            {
+                UpdateHandAnimation(leftController, "LeftPinch", "LeftGrab");
+            }
 
-        if (rightController != null)
-        {
-            UpdateHandAnimation(rightController, "RightPinch", "RightGrab");
+            if (rightController != null)
+            {
+                UpdateHandAnimation(rightController, "RightPinch", "RightGrab");
+            }
         }
     }
 
     private void UpdateHandAnimation(XRController controller, string pinchParameter, string grabParameter)
     {
-        // Assuming your animator has parameters for pinch and grab as per the image you've shown
         if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out bool pinchValue))
         {
-            handAnimator.SetBool(pinchParameter, pinchValue);
-           
+            photonView.RPC("UpdateAnimationState", RpcTarget.AllBuffered, pinchParameter, pinchValue ? 1f : 0f);
         }
 
         if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out bool grabValue))
         {
-            handAnimator.SetBool(grabParameter, grabValue);
+            photonView.RPC("UpdateAnimationState", RpcTarget.AllBuffered, grabParameter, grabValue ? 1f : 0f);
         }
+    }
 
-        // You can also map the analog values of the grip and trigger if needed
-        // For example, if you want to use the analog grip strength instead of a boolean pressed/released state
-        if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.grip, out float gripStrength))
-        {
-            handAnimator.SetFloat(grabParameter, gripStrength);
-            Debug.Log(grabParameter);
-        }
-
-        if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerStrength))
-        {
-            handAnimator.SetFloat(pinchParameter, triggerStrength);
-            Debug.Log(pinchParameter);
-        }
+    [PunRPC]
+    public void UpdateAnimationState(string parameterName, float value)
+    {
+        // This method will be called across the network
+        // Set the animator parameter based on the received values
+        handAnimator.SetFloat(parameterName, value);
     }
 }
