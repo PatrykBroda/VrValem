@@ -9,6 +9,26 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public InputField createInput;
     public InputField joinInput;
 
+    public GameObject playerPrefab; // Assign this in the Unity Inspector
+    public Transform[] spawnPoints;
+
+    private void Start()
+    {
+       // SpawnPlayer();
+    }
+
+    void SpawnPlayer()
+    {
+        if (PhotonNetwork.IsConnectedAndReady)
+        {
+            // Choose a spawn point based on the player's actor number to avoid spawning players too close together
+            Transform spawnPoint = spawnPoints[PhotonNetwork.LocalPlayer.ActorNumber % spawnPoints.Length];
+
+            // Instantiate the player across the network
+            PhotonNetwork.Instantiate(playerPrefab.name, spawnPoint.position, spawnPoint.rotation);
+        }
+    }
+
     public void CreateRoom()
     {
         PhotonNetwork.CreateRoom(createInput.text, new Photon.Realtime.RoomOptions { MaxPlayers = 4 }); // Example max players set to 4
