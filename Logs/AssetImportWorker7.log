@@ -1,0 +1,586 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.19f1 (244b723c30a6) revision 2378610'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32400 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+C:/Project/UnityPersonal/VrValem
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+62739
+Successfully changed project path to: C:/Project/UnityPersonal/VrValem
+C:/Project/UnityPersonal/VrValem
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31612] Host "[IP] 192.168.0.7 [Port] 0 [Flags] 2 [Guid] 2099751094 [EditorId] 2099751094 [Version] 1048832 [Id] WindowsEditor(7,Patryk) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [31612] Host "[IP] 192.168.0.7 [Port] 0 [Flags] 2 [Guid] 2099751094 [EditorId] 2099751094 [Version] 1048832 [Id] WindowsEditor(7,Patryk) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 89.04 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.19f1 (244b723c30a6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Project/UnityPersonal/VrValem/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA RTX A500 Laptop GPU (ID=0x25bb)
+    Vendor:   NVIDIA
+    VRAM:     3979 MB
+    Driver:   31.0.15.2919
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.026189 seconds.
+- Loaded All Assemblies, in  0.653 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.429 seconds
+Domain Reload Profiling: 1081ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (107ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (206ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (244ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (199ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (432ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (312ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (211ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'websocket-sharp.dll' with different versions detected, using 'Packages/com.unity.services.wire/Plugins/websocket-sharp.dll, AssemblyName=websocket-sharp, Version=1.0.2.18559, Culture=neutral, PublicKeyToken=5660b08a1845a91e' and ignoring 'Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll, AssemblyName=websocket-sharp, Version=1.0.2.0, Culture=neutral, PublicKeyToken=5660b08a1845a91e'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.696 seconds
+Refreshing native plugins compatible for Editor in 15.88 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VrValem
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.634 seconds
+Domain Reload Profiling: 1325ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (502ms)
+		LoadAssemblies (362ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (204ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (146ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (634ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (505ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (319ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 21.89 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8216 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 149 unused Assets / (0.7 MB). Loaded Objects now: 8676.
+Memory consumption went from 294.2 MB to 293.4 MB.
+Total: 4.033700 ms (FindLiveObjects: 0.375200 ms CreateObjectMapping: 0.193100 ms MarkObjects: 3.041900 ms  DeleteObjects: 0.422200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/StyledEnum.cs: f32e1bc9bd43f47152107ef3a169056d -> cf4e9053177bc0faddc80d2c05aeaa94
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/StyledTextDrawer.cs: 3af0d13a74cf016e23caa03081ec4ff9 -> d8f6222dc08ae6d490686afd58ca144e
+  custom:scripting/monoscript/fileName/DrawWindowCategory.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/StyledBanner.cs: d5457ac6f063a7a2752667589c598593 -> 1fa36bded75bcc83389a35a38a24700d
+  custom:scripting/monoscript/fileName/StyledInteractive.cs: a09606f27f0e4b395f6acff18d0838af -> 0697e560670ed4999657403ac08ef097
+  custom:scripting/monoscript/fileName/StyledOptionsSliderDrawer.cs: 09c5caabf9110d678836ae75bc981bb3 -> 906425bb1c3b027ba328d5ddb1f248eb
+  custom:scripting/monoscript/fileName/StyledButtonDrawer.cs: b787b5be0f4bf7bc0602ae3a18d28c5a -> eb4cf86b17171b3614656cf46526596b
+  custom:scripting/monoscript/fileName/StyledTextureSingleLineDrawer.cs: ab5605266a13b26646d2f35b7a23f95d -> eb30538f530c1c3eada93d9dbf5fdb98
+  custom:scripting/monoscript/fileName/StyledIndent.cs: 506a9ee60196d1238435fd3e0c05fa3d -> dbeaf677ec914da5702f1914cce99c49
+  custom:scripting/monoscript/fileName/StyledCategory.cs: 9f92543f6c2bde2ca8d0426cd8e5973a -> 8e7cf59655eb4a73d19619670d6e860a
+  custom:scripting/monoscript/fileName/StyledInteractiveDrawer.cs: eae185d77edb3faa4d2f00869675ed46 -> ce19a4193f95944d4aa65f1552a65020
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/StyledSpaceDrawer.cs: 550bdf4e2dc0233c35b2550ed88f8d4a -> ae04b719ad6aff3b2aeb344e30967f08
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/StyledTextureDrawer.cs: 8a4b8bc8007a808910f9fb9ecd2b7f36 -> 5869ea90bdbd2de83912dbc298b41b1a
+  custom:scripting/monoscript/fileName/StyledTexturePreview.cs: b5dec9d7b28ce40cdab7fd48fedcf48a -> 793de234aad21816ed93b8494e1dec14
+  custom:scripting/monoscript/fileName/FlickerLight.cs: 81d91bf9752648665812fe2455aa0c47 -> e52821dfc53ef7e43ffe496bc42dbd16
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/DrawWindowBanner.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:scripting/monoscript/fileName/StyledLayersDrawer.cs: 36ff4f431ebccf6f8031bc413c3ab993 -> 8d23c9248cb647451e6f07d4c948eadb
+  custom:scripting/monoscript/fileName/StyledLayers.cs: c7505a286af7175d597ac3dd0aa5b762 -> 20b6ea0c065e716761a79565692c083a
+  custom:scripting/monoscript/fileName/StyledToggleDrawer.cs: e67d2722808a6ef8da776e3261d49a44 -> fa32f0d948779827300f154d8afe8a43
+  custom:scripting/monoscript/fileName/DrawInspectorCategory.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:scripting/monoscript/fileName/StyledScriptableObject.cs: 93f9aed9489669170dbf03bdedc7d9e3 -> 49cd20813bf9d8a1b126d5560f1aacd7
+  custom:scripting/monoscript/fileName/StyledTexturePreviewDrawer.cs: 290bd153856986c3176a1044dd87fa28 -> 7417ab5584a7da8fe60faa208fb88af7
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Constants.cs: 278d5994bce148580d1a6a6464d33506 -> c1aada8d20459db185f9437d6a69e37c
+  custom:scripting/monoscript/fileName/SkyboxExtendedWindows.cs: 21e2902747982921c8e60bbc855a9d9e -> 91db52253ea00cf20844992b86537e4d
+  custom:scripting/monoscript/fileName/StyledMonoBehaviour.cs: 0794d63e29fb7b00b7e022cade0ad9f9 -> 30fd2a2e01a53762351eb5fee61f163f
+  custom:scripting/monoscript/fileName/SaveSettingsData.cs: f7e77e8104f59d627f004509b729b0dc -> 601588721e15dccfe36bbb9b8f6edd21
+  custom:scripting/monoscript/fileName/StyledMessageDrawer.cs: 01ece371f207bec3ddfddf68a6052700 -> 20992691c2fe23b50383424cf7a26b82
+  custom:scripting/monoscript/fileName/LoadSettingsData.cs: f7e77e8104f59d627f004509b729b0dc -> 601588721e15dccfe36bbb9b8f6edd21
+  custom:scripting/monoscript/fileName/DrawInspectorBanner.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/StyledEnumDrawer.cs: f1583bc07429f2b3554f7af326966840 -> 2cf617b1db144ddbca03d98feca25c96
+  custom:scripting/monoscript/fileName/StyledMaskDrawer.cs: 77e87689c84def4efbc0d313e4ca3e5d -> 15cfdca36a0e036f7c50405d6fd2f1fc
+  custom:scripting/monoscript/fileName/StyledVectorDrawer.cs: 02899ce749ac65f362a650a46132db8d -> 62a17712eb06f5707d9322c3ab33eb93
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/StyledCategoryDrawer.cs: fb1e76d968a20443dfc9fe3a3c578493 -> db8756881335f421d811372005190bb8
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SunControl.cs: 96ebb6047bbbce89ef4dab69a9a24d77 -> f11bca8f744799e4e7e7f0171deec9f7
+  custom:scripting/monoscript/fileName/SkyboxExtendedHub.cs: 5558aecbeed8f3efea36a8a3e1e4fbf4 -> 456308305f60142531b7c5bf3835c1a5
+  custom:scripting/monoscript/fileName/StyledMessage.cs: 0daed577d9f0802906555766e60f7827 -> e9fafad453f7d1b335f7469da20954f2
+  custom:scripting/monoscript/fileName/SkyboxExtendedShaderGUI.cs: 94c2d2ddb000543a201b4fd3eed07c8e -> 84988a868e45b7e4d73ac26862426c86
+  custom:scripting/monoscript/fileName/StyledMonoBehaviourEditor.cs: a1735bb637070af54ff7b9cb451eb395 -> 55385ad0841100782ff0c99fe0a67fab
+  custom:scripting/monoscript/fileName/HS_EffectSound.cs: 909f37f8fedfe82411241b778e997c38 -> ea6718bc01717e465ceaef085a864e26
+  custom:scripting/monoscript/fileName/StyledRangeOptions.cs: aaa64b2cfc5da1023cee5566bcf74e85 -> 847e8c63e564d7b3b0bcb2f213f5777f
+  custom:scripting/monoscript/fileName/StyledBannerDrawer.cs: 473a784ef05d85e7cafb78fd31f4d13a -> 9111b4ae69b4059a71d5d27afb1f49c8
+  custom:scripting/monoscript/fileName/StyledLabelGizmo.cs: d1303769cde0891747a340a4f07cfd9d -> 681eed1a6020f88bfdc276f75ce0c2e1
+  custom:scripting/monoscript/fileName/HS_DemoToonVFX.cs: 9a9910ddbc65a635917a9fcb28a9dba2 -> d4a69f81d89b3f3b3a21b172ad447770
+  custom:scripting/monoscript/fileName/StyledSpace.cs: 7b32d0b056bfa950760fc1b9cc3c709a -> 5f16ec5dfe2e6caceb850dec2c2ca3fc
+  custom:scripting/monoscript/fileName/StyledScriptableObjectEditor.cs: 492554c700dccea8e2786aecd9dd7a15 -> 9509d87d39724722d6132e74bf674184
+  custom:scripting/monoscript/fileName/StyledText.cs: 03a4db86ebe46057018651908ecfc205 -> ccc1b39c79ddaed665fd78f020bc6a03
+  custom:scripting/monoscript/fileName/StyledMask.cs: 4db75cea930925e1263c5c24f2b4948e -> 4678f577def2678967fb4ffa6b2ba653
+  custom:scripting/monoscript/fileName/StyledDiffusionMaterialDrawer.cs: 8429b13d81bd72eef349885886500df2 -> eee2b6b0e2e39a0dff06a2e0bf1fb510
+  custom:scripting/monoscript/fileName/StyledRemapSliderDrawer.cs: 3d17ea2f00c6ae316b24582a05b77eb4 -> a2c931bc20fa2ac0277938884e4179a2
+  custom:scripting/monoscript/fileName/StyledIndentDrawer.cs: e9c9fb0b1d2990084010be466415db45 -> 62715c0c2eef8b1304139febfa740d3c
+  custom:scripting/monoscript/fileName/StyledEmissiveIntensityDrawer.cs: ec298cda0f9697b88a5dc1cb2d296240 -> 9e762a7c3bf52ea3ad41d7f930f8880c
+  custom:scripting/monoscript/fileName/HS_FrontMover.cs: bd9bc605dae8de133191f22a392e4ee9 -> 47ef774f44cc43afb3b6c27178ad4686
+  custom:scripting/monoscript/fileName/SettingsData.cs: dbd5d6011a29ff8a0f63049792dc7032 -> 7d0e769b0ae683ebcb407da3b57e03b6
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/StyledButton.cs: dffa88caeb123e2403b2b8dc06738298 -> 9a1c2a45c1a37e41ae8464019a64708d
+  custom:scripting/monoscript/fileName/HS_ParticleCollisionInstance.cs: f56d3cbf73ba18fa15bd56496f21c90b -> edd4ae4c4469e63e1202d7fd52b4bbfd
+  custom:scripting/monoscript/fileName/StyledRangeOptionsDrawer.cs: 4926c0ca49f5a436fc8eafebbb97a5c6 -> bfa83081b223cb3aca05e471b3387471
+========================================================================
+Received Import Request.
+  Time since last request: 378969.277923 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Circle112bcg.mat
+  artifactKey: Guid(b0da9aeff26e12549a51e00b76dec40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Circle112bcg.mat using Guid(b0da9aeff26e12549a51e00b76dec40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfa1f46601a57740ebd3e2d490df8d5') in 0.405378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.923353 seconds.
+  path: Assets/Plugins/LowpolyStyle/Desert/1_FBX/Materials/Desert1.mat
+  artifactKey: Guid(d2073165861d66f4ab3a945375e899ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/LowpolyStyle/Desert/1_FBX/Materials/Desert1.mat using Guid(d2073165861d66f4ab3a945375e899ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76394dded1380167ade444242bcf01cc') in 0.032948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007528 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Flare14cg.mat
+  artifactKey: Guid(d89326cbc425f694dafcf57a0caf2da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Flare14cg.mat using Guid(d89326cbc425f694dafcf57a0caf2da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6feb120bdd19dc1f9150ee31d55bb5cd') in 0.017190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Flash21bcg.mat
+  artifactKey: Guid(7dad299f9caed054ea10097fd11f0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Flash21bcg.mat using Guid(7dad299f9caed054ea10097fd11f0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af451ae4f585fa5bbe5f53ef0254df2b') in 0.016630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Flare17bcg.mat
+  artifactKey: Guid(c95a4f2f3beafef4a8cd1750c8a53e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Flare17bcg.mat using Guid(c95a4f2f3beafef4a8cd1750c8a53e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e33159ab8ad036f3d6badb3c90f3d7') in 0.012338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.039331 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Lightning15l.mat
+  artifactKey: Guid(6665ce3c41874df47a6aef0b7eef5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Lightning15l.mat using Guid(6665ce3c41874df47a6aef0b7eef5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64bb3556a40f5561d231b6de4da76750') in 0.014999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Mask54bcg.mat
+  artifactKey: Guid(eeef1335c149a284dbdf47a7138e3118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Mask54bcg.mat using Guid(eeef1335c149a284dbdf47a7138e3118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4fb297a8371de12c44f7cd15fb717d') in 0.020383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/MuzzleFlash2cg.mat
+  artifactKey: Guid(503813d282098fb46936710f053bb835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/MuzzleFlash2cg.mat using Guid(503813d282098fb46936710f053bb835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d3af70be8ea7176f1522b6574782d9') in 0.014416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Point11cg.mat
+  artifactKey: Guid(c90a3c23b0fc60244a9f3588ff9e721f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Point11cg.mat using Guid(c90a3c23b0fc60244a9f3588ff9e721f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf183e288ca9d1052fd909aa9613959d') in 0.014332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Point5cg.mat
+  artifactKey: Guid(85455188b71fea741bd0b80cbe893384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Point5cg.mat using Guid(85455188b71fea741bd0b80cbe893384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6b873c665b64cdce9c2d6c76250840') in 0.014365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005872 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/SS1bcg.mat
+  artifactKey: Guid(13652c21ac9e0c0419a23ddb06f683fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/SS1bcg.mat using Guid(13652c21ac9e0c0419a23ddb06f683fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d94c361f8aa85e6fe6d35c2b15063fa') in 0.013134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Trail29cg4.mat
+  artifactKey: Guid(29af2b65de6d8d744832fb259c7a9425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Trail29cg4.mat using Guid(29af2b65de6d8d744832fb259c7a9425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9102368007c2aab9fddb619e0e6e9f16') in 0.015056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Trail55bcg.mat
+  artifactKey: Guid(2d797bf69a09aa84fa0eea32fbf3b7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Trail55bcg.mat using Guid(2d797bf69a09aa84fa0eea32fbf3b7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecfa37e6f7845e31edb1122f1aa447ed') in 0.015461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides9.mat
+  artifactKey: Guid(2502ef35cb004fc42919b2fa6523106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides9.mat using Guid(2502ef35cb004fc42919b2fa6523106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5c090f13f8162446fef3bc36861a16') in 0.026255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/WaterF3bts.mat
+  artifactKey: Guid(2bfce0a154d2667469cb89d0eba507f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/WaterF3bts.mat using Guid(2bfce0a154d2667469cb89d0eba507f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e063c9fe441de1172600d4010699f7e1') in 0.025531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TrailPart9bcg.mat
+  artifactKey: Guid(0ab6457f631053a42a1c0c292cee1057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TrailPart9bcg.mat using Guid(0ab6457f631053a42a1c0c292cee1057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccb0eef0fdd1eae829402758e2f19d6') in 0.040530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides15.mat
+  artifactKey: Guid(779925131b1872a4fba17c3577560033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides15.mat using Guid(779925131b1872a4fba17c3577560033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4224c41b42a87bfb3ac9056e8a270f39') in 0.019343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides12.mat
+  artifactKey: Guid(72363959d11d2ba4584265a16271148e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides12.mat using Guid(72363959d11d2ba4584265a16271148e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a011e009f0f23ba64f97c0d8305cf3') in 0.012314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 2.053933 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides21.mat
+  artifactKey: Guid(237ad81c3eb001c4ea282a6292645251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides21.mat using Guid(237ad81c3eb001c4ea282a6292645251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766d093f8c0c92388c48481caaf6dc0b') in 0.015758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides30.mat
+  artifactKey: Guid(bbbc91c8725bb1841961d41555465902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides30.mat using Guid(bbbc91c8725bb1841961d41555465902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314cab8ebea9f11ae12940e15474f06a') in 0.020412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides25.mat
+  artifactKey: Guid(24a670aa72cc1de41bc1b74e6963106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/TwoSides25.mat using Guid(24a670aa72cc1de41bc1b74e6963106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1806dd7ffd6b00a9774b4a93bd58b30') in 0.017570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.156867 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/HPL2cg.mat
+  artifactKey: Guid(1b5f613319e0f324c9637cfac64149e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/HPL2cg.mat using Guid(1b5f613319e0f324c9637cfac64149e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11568914717c0b46ba7513d95a31886c') in 0.017489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Materials/Impact2bcg.mat
+  artifactKey: Guid(a30581ba5acb9684a9c1fef995e94449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Materials/Impact2bcg.mat using Guid(a30581ba5acb9684a9c1fef995e94449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3a22d0eafed41cd0aaeb784d5c3a7b') in 0.016549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/Hovl Studio/Epic toon VFX 2/Demo scene/Demo scene hero/GrayMat.mat
+  artifactKey: Guid(bb058fbc18c6ae64e9427db3f8279f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Epic toon VFX 2/Demo scene/Demo scene hero/GrayMat.mat using Guid(bb058fbc18c6ae64e9427db3f8279f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15680f6c21f5375eca1cd3705e52cb81') in 0.019904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'websocket-sharp.dll' with different versions detected, using 'Packages/com.unity.services.wire/Plugins/websocket-sharp.dll, AssemblyName=websocket-sharp, Version=1.0.2.18559, Culture=neutral, PublicKeyToken=5660b08a1845a91e' and ignoring 'Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll, AssemblyName=websocket-sharp, Version=1.0.2.0, Culture=neutral, PublicKeyToken=5660b08a1845a91e'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.860 seconds
+Refreshing native plugins compatible for Editor in 36.75 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VrValem
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  3.239 seconds
+Domain Reload Profiling: 4092ms
+	BeginReloadAssembly (213ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (508ms)
+		LoadAssemblies (594ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (3240ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1280ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (210ms)
+			ProcessInitializeOnLoadAttributes (745ms)
+			ProcessInitializeOnLoadMethodAttributes (268ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+Refreshing native plugins compatible for Editor in 57.15 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8030 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 106 unused Assets / (0.7 MB). Loaded Objects now: 8762.
+Memory consumption went from 267.6 MB to 266.9 MB.
+Total: 6.150700 ms (FindLiveObjects: 0.525500 ms CreateObjectMapping: 0.254500 ms MarkObjects: 4.457800 ms  DeleteObjects: 0.910900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/StyledEnum.cs: f32e1bc9bd43f47152107ef3a169056d -> cf4e9053177bc0faddc80d2c05aeaa94
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/StyledTextDrawer.cs: 3af0d13a74cf016e23caa03081ec4ff9 -> d8f6222dc08ae6d490686afd58ca144e
+  custom:scripting/monoscript/fileName/DrawWindowCategory.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/StyledBanner.cs: d5457ac6f063a7a2752667589c598593 -> 1fa36bded75bcc83389a35a38a24700d
+  custom:scripting/monoscript/fileName/StyledInteractive.cs: a09606f27f0e4b395f6acff18d0838af -> 0697e560670ed4999657403ac08ef097
+  custom:scripting/monoscript/fileName/StyledOptionsSliderDrawer.cs: 09c5caabf9110d678836ae75bc981bb3 -> 906425bb1c3b027ba328d5ddb1f248eb
+  custom:scripting/monoscript/fileName/StyledButtonDrawer.cs: b787b5be0f4bf7bc0602ae3a18d28c5a -> eb4cf86b17171b3614656cf46526596b
+  custom:scripting/monoscript/fileName/StyledTextureSingleLineDrawer.cs: ab5605266a13b26646d2f35b7a23f95d -> eb30538f530c1c3eada93d9dbf5fdb98
+  custom:scripting/monoscript/fileName/StyledIndent.cs: 506a9ee60196d1238435fd3e0c05fa3d -> dbeaf677ec914da5702f1914cce99c49
+  custom:scripting/monoscript/fileName/StyledCategory.cs: 9f92543f6c2bde2ca8d0426cd8e5973a -> 8e7cf59655eb4a73d19619670d6e860a
+  custom:scripting/monoscript/fileName/StyledInteractiveDrawer.cs: eae185d77edb3faa4d2f00869675ed46 -> ce19a4193f95944d4aa65f1552a65020
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/StyledSpaceDrawer.cs: 550bdf4e2dc0233c35b2550ed88f8d4a -> ae04b719ad6aff3b2aeb344e30967f08
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/StyledTextureDrawer.cs: 8a4b8bc8007a808910f9fb9ecd2b7f36 -> 5869ea90bdbd2de83912dbc298b41b1a
+  custom:scripting/monoscript/fileName/StyledTexturePreview.cs: b5dec9d7b28ce40cdab7fd48fedcf48a -> 793de234aad21816ed93b8494e1dec14
+  custom:scripting/monoscript/fileName/FlickerLight.cs: 81d91bf9752648665812fe2455aa0c47 -> e52821dfc53ef7e43ffe496bc42dbd16
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/DrawWindowBanner.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:scripting/monoscript/fileName/StyledLayersDrawer.cs: 36ff4f431ebccf6f8031bc413c3ab993 -> 8d23c9248cb647451e6f07d4c948eadb
+  custom:scripting/monoscript/fileName/StyledLayers.cs: c7505a286af7175d597ac3dd0aa5b762 -> 20b6ea0c065e716761a79565692c083a
+  custom:scripting/monoscript/fileName/StyledToggleDrawer.cs: e67d2722808a6ef8da776e3261d49a44 -> fa32f0d948779827300f154d8afe8a43
+  custom:scripting/monoscript/fileName/DrawInspectorCategory.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:scripting/monoscript/fileName/StyledScriptableObject.cs: 93f9aed9489669170dbf03bdedc7d9e3 -> 49cd20813bf9d8a1b126d5560f1aacd7
+  custom:scripting/monoscript/fileName/StyledTexturePreviewDrawer.cs: 290bd153856986c3176a1044dd87fa28 -> 7417ab5584a7da8fe60faa208fb88af7
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Constants.cs: 278d5994bce148580d1a6a6464d33506 -> c1aada8d20459db185f9437d6a69e37c
+  custom:scripting/monoscript/fileName/SkyboxExtendedWindows.cs: 21e2902747982921c8e60bbc855a9d9e -> 91db52253ea00cf20844992b86537e4d
+  custom:scripting/monoscript/fileName/StyledMonoBehaviour.cs: 0794d63e29fb7b00b7e022cade0ad9f9 -> 30fd2a2e01a53762351eb5fee61f163f
+  custom:scripting/monoscript/fileName/SaveSettingsData.cs: f7e77e8104f59d627f004509b729b0dc -> 601588721e15dccfe36bbb9b8f6edd21
+  custom:scripting/monoscript/fileName/StyledMessageDrawer.cs: 01ece371f207bec3ddfddf68a6052700 -> 20992691c2fe23b50383424cf7a26b82
+  custom:scripting/monoscript/fileName/LoadSettingsData.cs: f7e77e8104f59d627f004509b729b0dc -> 601588721e15dccfe36bbb9b8f6edd21
+  custom:scripting/monoscript/fileName/DrawInspectorBanner.cs: 870199d21eac18ae7e662099ba33b3eb -> 9587624fa9133f897063690bbf7e7226
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/StyledEnumDrawer.cs: f1583bc07429f2b3554f7af326966840 -> 2cf617b1db144ddbca03d98feca25c96
+  custom:scripting/monoscript/fileName/StyledMaskDrawer.cs: 77e87689c84def4efbc0d313e4ca3e5d -> 15cfdca36a0e036f7c50405d6fd2f1fc
+  custom:scripting/monoscript/fileName/StyledVectorDrawer.cs: 02899ce749ac65f362a650a46132db8d -> 62a17712eb06f5707d9322c3ab33eb93
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/StyledCategoryDrawer.cs: fb1e76d968a20443dfc9fe3a3c578493 -> db8756881335f421d811372005190bb8
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SunControl.cs: 96ebb6047bbbce89ef4dab69a9a24d77 -> f11bca8f744799e4e7e7f0171deec9f7
+  custom:scripting/monoscript/fileName/SkyboxExtendedHub.cs: 5558aecbeed8f3efea36a8a3e1e4fbf4 -> 456308305f60142531b7c5bf3835c1a5
+  custom:scripting/monoscript/fileName/StyledMessage.cs: 0daed577d9f0802906555766e60f7827 -> e9fafad453f7d1b335f7469da20954f2
+  custom:scripting/monoscript/fileName/SkyboxExtendedShaderGUI.cs: 94c2d2ddb000543a201b4fd3eed07c8e -> 84988a868e45b7e4d73ac26862426c86
+  custom:scripting/monoscript/fileName/StyledMonoBehaviourEditor.cs: a1735bb637070af54ff7b9cb451eb395 -> 55385ad0841100782ff0c99fe0a67fab
+  custom:scripting/monoscript/fileName/HS_EffectSound.cs: 909f37f8fedfe82411241b778e997c38 -> ea6718bc01717e465ceaef085a864e26
+  custom:scripting/monoscript/fileName/StyledRangeOptions.cs: aaa64b2cfc5da1023cee5566bcf74e85 -> 847e8c63e564d7b3b0bcb2f213f5777f
+  custom:scripting/monoscript/fileName/StyledBannerDrawer.cs: 473a784ef05d85e7cafb78fd31f4d13a -> 9111b4ae69b4059a71d5d27afb1f49c8
+  custom:scripting/monoscript/fileName/StyledLabelGizmo.cs: d1303769cde0891747a340a4f07cfd9d -> 681eed1a6020f88bfdc276f75ce0c2e1
+  custom:scripting/monoscript/fileName/HS_DemoToonVFX.cs: 9a9910ddbc65a635917a9fcb28a9dba2 -> d4a69f81d89b3f3b3a21b172ad447770
+  custom:scripting/monoscript/fileName/StyledSpace.cs: 7b32d0b056bfa950760fc1b9cc3c709a -> 5f16ec5dfe2e6caceb850dec2c2ca3fc
+  custom:scripting/monoscript/fileName/StyledScriptableObjectEditor.cs: 492554c700dccea8e2786aecd9dd7a15 -> 9509d87d39724722d6132e74bf674184
+  custom:scripting/monoscript/fileName/StyledText.cs: 03a4db86ebe46057018651908ecfc205 -> ccc1b39c79ddaed665fd78f020bc6a03
+  custom:scripting/monoscript/fileName/StyledMask.cs: 4db75cea930925e1263c5c24f2b4948e -> 4678f577def2678967fb4ffa6b2ba653
+  custom:scripting/monoscript/fileName/StyledDiffusionMaterialDrawer.cs: 8429b13d81bd72eef349885886500df2 -> eee2b6b0e2e39a0dff06a2e0bf1fb510
+  custom:scripting/monoscript/fileName/StyledRemapSliderDrawer.cs: 3d17ea2f00c6ae316b24582a05b77eb4 -> a2c931bc20fa2ac0277938884e4179a2
+  custom:scripting/monoscript/fileName/StyledIndentDrawer.cs: e9c9fb0b1d2990084010be466415db45 -> 62715c0c2eef8b1304139febfa740d3c
+  custom:scripting/monoscript/fileName/StyledEmissiveIntensityDrawer.cs: ec298cda0f9697b88a5dc1cb2d296240 -> 9e762a7c3bf52ea3ad41d7f930f8880c
+  custom:scripting/monoscript/fileName/HS_FrontMover.cs: bd9bc605dae8de133191f22a392e4ee9 -> 47ef774f44cc43afb3b6c27178ad4686
+  custom:scripting/monoscript/fileName/SettingsData.cs: dbd5d6011a29ff8a0f63049792dc7032 -> 7d0e769b0ae683ebcb407da3b57e03b6
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/StyledButton.cs: dffa88caeb123e2403b2b8dc06738298 -> 9a1c2a45c1a37e41ae8464019a64708d
+  custom:scripting/monoscript/fileName/HS_ParticleCollisionInstance.cs: f56d3cbf73ba18fa15bd56496f21c90b -> edd4ae4c4469e63e1202d7fd52b4bbfd
+  custom:scripting/monoscript/fileName/StyledRangeOptionsDrawer.cs: 4926c0ca49f5a436fc8eafebbb97a5c6 -> bfa83081b223cb3aca05e471b3387471
+========================================================================
+Received Import Request.
+  Time since last request: 28.981903 seconds.
+  path: Assets/Plugins/Hovl Studio/Resources/Textures/Noise53.png
+  artifactKey: Guid(7d68a918c0765ff46bd6aa7513519399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Hovl Studio/Resources/Textures/Noise53.png using Guid(7d68a918c0765ff46bd6aa7513519399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11310e25e026c181ef1b27e602a58c14') in 0.102266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
