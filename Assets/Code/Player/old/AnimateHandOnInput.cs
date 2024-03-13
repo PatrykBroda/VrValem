@@ -52,13 +52,13 @@ public class AnimateHandOnInput : MonoBehaviourPun
         if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.grip, out float gripStrength))
         {
             handAnimator.SetFloat(grabParameter, gripStrength);
-            Debug.Log(grabParameter);
+            
         }
 
         if (controller.inputDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerStrength))
         {
             handAnimator.SetFloat(pinchParameter, triggerStrength);
-            Debug.Log(pinchParameter);
+            
         }
     }
 }
