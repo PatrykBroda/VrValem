@@ -13,6 +13,7 @@ public class FireSpellCastingManager : MonoBehaviour
     private float timeToGetHandInBase = 2;
 
     private float baseTimer;
+    
 
     private float timeUntilBaseIsNeededAgain = 3;
 
@@ -20,6 +21,7 @@ public class FireSpellCastingManager : MonoBehaviour
 
     public GameObject flameThrowerPrefab;
     public Transform forwardSpawnPoint;
+    public FireConfiguration flamethrowerConfig;
 
     private bool isCheckingHandMovement = false;
 
@@ -85,12 +87,27 @@ public class FireSpellCastingManager : MonoBehaviour
     }
 
 
-    
-    
 
-    private void FlameThrowerAttack()
+
+
+    private IEnumerator FlameThrowerAttack()
     {
         Debug.LogError("FLAME");
-        Instantiate(flameThrowerPrefab, forwardSpawnPoint.transform);
+        GameObject fire = Instantiate(flameThrowerPrefab, forwardSpawnPoint.transform);
+        float clock = 0f; // Initialize clock to 0
+
+        while (clock < flamethrowerConfig.ProjectileLifeTime)
+        {
+            clock += Time.deltaTime;
+            if(!leftHandFlameThrower || !rightHandFlameThrower )
+            {
+                clock = flamethrowerConfig.ProjectileLifeTime;
+            }
+            yield return null; // This line should be inside the loop
+        }
+
+        Destroy( fire );
+        clock = 0f;
+        // Additional code to destroy or deactivate 'fire' goes here, if necessary
     }
 }
