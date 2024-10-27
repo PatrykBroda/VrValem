@@ -4,110 +4,66 @@ using UnityEngine;
 
 public class FireSpellCastingManager : MonoBehaviour
 {
+    // Reference to the player's camera
     public Transform playerCamera;
 
+    // Flags to indicate if hands are in the base zone
     public bool leftHandInBaseZone, rightHandInBaseZone;
 
+    // Flags to indicate if hands are holding the flamethrower
     public bool leftHandFlameThrower, rightHandFlameThrower;
 
-    private float timeToGetHandInBase = 2;
-
-    private float baseTimer;
-    
-
-    private float timeUntilBaseIsNeededAgain = 3;
-
-    private float nextMoveTimer;
-
+    // Prefab for the flamethrower effect
     public GameObject flameThrowerPrefab;
+
+    // Spawn point for the flamethrower
     public Transform forwardSpawnPoint;
+
+    // Configuration for the flamethrower
     public FireConfiguration flamethrowerConfig;
 
-    private bool isCheckingHandMovement = false;
-
-
+    // FixedUpdate adjusts the position and rotation to match the player's camera
     private void FixedUpdate()
     {
+        // Align the object's Y rotation with the player's camera
         float y = playerCamera.transform.rotation.eulerAngles.y;
-      
-
         gameObject.transform.rotation = Quaternion.Euler(gameObject.transform.rotation.x, y, gameObject.transform.rotation.z);
-        
-        gameObject.transform.position = new Vector3(playerCamera.position.x , gameObject.transform.position.y , playerCamera.transform.position.z);
-      
 
-        
+        // Align the object's X and Z position with the player's camera, keep Y position unchanged
+        gameObject.transform.position = new Vector3(playerCamera.position.x, gameObject.transform.position.y, playerCamera.transform.position.z);
     }
 
+    // Update is called once per frame
     private void Update()
     {
-        if (leftHandInBaseZone && rightHandInBaseZone && !isCheckingHandMovement)
+        // Check if both hands are in the base zone and are holding flamethrowers
+        if (leftHandInBaseZone && rightHandInBaseZone && leftHandFlameThrower && rightHandFlameThrower)
         {
-            Debug.Log("lets go");
-            StartCoroutine(checkNextHandMovement());
-            //search for next hand movement
-        }
-
-        if (leftHandFlameThrower && rightHandFlameThrower)
-        {
-            Debug.Log("Fire");
+            Debug.LogError("[FireSpellCastingManager] Both hands are in the base zone and holding flamethrowers. Casting FlameThrower.");
+            FlameThrowerAttack();
         }
     }
 
-
-    private IEnumerator checkNextHandMovement()
+    // Method to handle the flamethrower attack
+    private void FlameThrowerAttack()
     {
-        isCheckingHandMovement = true;
-        ResetBase();
+        Debug.LogError("[FireSpellCastingManager] FLAME! Casting FlameThrower.");
 
-        // Reset the timer at the start.
-        baseTimer = 0;
+        // Instantiate the flamethrower prefab at the forward spawn point
+        GameObject fire = Instantiate(flameThrowerPrefab, forwardSpawnPoint.position, forwardSpawnPoint.rotation);
 
-        while (baseTimer <= timeUntilBaseIsNeededAgain)
-        {
-            baseTimer += Time.deltaTime;
-            Debug.Log(baseTimer);
-            if(leftHandFlameThrower && rightHandFlameThrower)
-            {
-                FlameThrowerAttack();
-            }
-            yield return null; // Wait until next frame before continuing the loop.
-        }
+        // Optionally, you can set the parent if needed
+        // fire.transform.parent = forwardSpawnPoint;
 
-        ResetBase();
-        isCheckingHandMovement = false;
+        // Schedule the destruction of the flamethrower prefab after its lifetime
+        Destroy(fire, flamethrowerConfig.ProjectileLifeTime);
     }
 
-
-
-
-    private void ResetBase()
+    // Optional: Handle OnTriggerExit if needed
+    private void OnTriggerExit(Collider other)
     {
-        baseTimer = 0;
-    }
-
-
-
-
-
-    private IEnumerator FlameThrowerAttack()
-    {
-        Debug.LogError("FLAME");
-        GameObject fire = Instantiate(flameThrowerPrefab, forwardSpawnPoint.transform);
-        float clock = 0f; // Initialize clock to 0
-
-        while (clock < flamethrowerConfig.ProjectileLifeTime)
-        {
-            clock += Time.deltaTime;
-            if(!leftHandFlameThrower || !rightHandFlameThrower )
-            {
-                clock = flamethrowerConfig.ProjectileLifeTime;
-            }
-            yield return null; // This line should be inside the loop
-        }
-
-        Destroy( fire );
-        clock = 0f;
-        // Additional code to destroy or deactivate 'fire' goes here, if necessary
+        // You can add logic here if you need to handle when a hand leaves the base zone
+        // For example, resetting flags or stopping ongoing spells
+        Debug.Log($"[FireSpellCastingManager] OnTriggerExit called by: {other.gameObject.name} on layer {LayerMask.LayerToName(other.gameObject.layer)}");
     }
 }
